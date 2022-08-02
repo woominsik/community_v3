@@ -31,7 +31,7 @@ public class AppTest {
     }
 
     @Test
-    public void ioc__Controller들을_수집(){
+    public void ioc__Controller들을_스캔하여_수집(){
         List<String> names = Container.getControllerNames();
 
         assertThat(names).contains("home");
